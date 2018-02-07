@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EFE34B404AF1F7BF6092402 /* Pods_flixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F6240336C254FD6A2AD518 /* Pods_flixTests.framework */; };
+		480FEAF6202A5AA2002FDE16 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FEAF5202A5AA2002FDE16 /* DetailViewController.swift */; };
 		482056AB2013C5190049B6AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482056AA2013C5190049B6AA /* AppDelegate.swift */; };
 		482056B02013C5190049B6AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 482056AE2013C5190049B6AA /* Main.storyboard */; };
 		482056B22013C5190049B6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 482056B12013C5190049B6AA /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		08F6240336C254FD6A2AD518 /* Pods_flixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9DF516E1C06A9E20BB09A0 /* Pods_flix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		480FEAF5202A5AA2002FDE16 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		482056A72013C5190049B6AA /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		482056AA2013C5190049B6AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		482056AF2013C5190049B6AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480FEAF3202A5A10002FDE16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				482056DA20144A5A0049B6AA /* NowPlayingViewController.swift */,
+				480FEAF5202A5AA2002FDE16 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		480FEAF4202A5A35002FDE16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48615A8F201A1FFD00A8C8E5 /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4820569E2013C5190049B6AA = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +137,8 @@
 			children = (
 				48615A8F201A1FFD00A8C8E5 /* MovieCell.swift */,
 				482056DA20144A5A0049B6AA /* NowPlayingViewController.swift */,
+				480FEAF4202A5A35002FDE16 /* Views */,
+				480FEAF3202A5A10002FDE16 /* ViewControllers */,
 				482056AA2013C5190049B6AA /* AppDelegate.swift */,
 				482056AE2013C5190049B6AA /* Main.storyboard */,
 				482056B12013C5190049B6AA /* Assets.xcassets */,
@@ -466,6 +487,7 @@
 				482056DB20144A5A0049B6AA /* NowPlayingViewController.swift in Sources */,
 				482056AB2013C5190049B6AA /* AppDelegate.swift in Sources */,
 				48615A90201A1FFD00A8C8E5 /* MovieCell.swift in Sources */,
+				480FEAF6202A5AA2002FDE16 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
