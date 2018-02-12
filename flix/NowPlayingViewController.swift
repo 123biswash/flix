@@ -51,7 +51,6 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
-        
         let movie = movies[indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
@@ -61,10 +60,19 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL (string: baseURLString + posterPathString)!
         cell.posterImageView.af_setImage(withURL: posterURL)
-        
-        
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let movie = movies[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.movie = movie
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
