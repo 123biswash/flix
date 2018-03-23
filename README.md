@@ -133,7 +133,7 @@ Time spent: **5** hours spent in total
 
 The following **required** user stories are complete:
 
-- [x]The following screens use AutoLayout to adapt to various orientations and screen sizes
+- [x] The following screens use AutoLayout to adapt to various orientations and screen sizes
 - [x] Movie feed view (+3pt)
 - [x] Detail view (+2pt)
 
